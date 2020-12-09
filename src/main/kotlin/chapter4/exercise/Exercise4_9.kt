@@ -1,0 +1,15 @@
+package chapter4.exercise.range_with_loop
+
+fun range(start: Int, end: Int): List<Int> {
+    val result: MutableList<Int> = mutableListOf()
+    var index = start
+    while (index < end) {
+        result.add(index)
+        index++
+    }
+    return result
+}
+
+fun main() {
+    println(range(0, 10))
+}
